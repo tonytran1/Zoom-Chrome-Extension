@@ -13,14 +13,12 @@
 
   "content_scripts": [
     {
-      "matches": ["http://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["content.js"]
     }
   ],
 
   "permissions": [
-    "activeTab",
-    "tabs",
-    "http://*/*"
+    "activeTab"
    ]
 }
