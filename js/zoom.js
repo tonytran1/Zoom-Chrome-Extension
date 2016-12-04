@@ -1,13 +1,18 @@
 $(document).ready(function () {
-  var scale = 1.0;
+  var scale = 1.00;
 
   $('#zoom-in').on('click', function() {
-    scale += 0.01;
+    scale += 0.005;
     sendToTab(scale);
   });
 
   $('#zoom-out').on('click', function() {
-    scale -= 0.01;
+    scale -= 0.005;
+    sendToTab(scale);
+  });
+
+  $('#reset').on('click', function() {
+    scale = 1.00;
     sendToTab(scale);
   });
 

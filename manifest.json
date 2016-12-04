@@ -2,19 +2,19 @@
   "manifest_version": 2,
 
   "name": "Zoom Plugin",
-  "description": "This extension will provide a shortcut to zoom in/out",
+  "description": "This extension provides a shortcut to finely zoom in/out",
   "version": "1.0",
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
 
   "browser_action": {
-    "default_icon": "zoom.png",
+    "default_icon": "images/zoom.png",
     "default_popup": "zoom.html"
   },
 
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["js/content.js"]
     }
   ],
 
