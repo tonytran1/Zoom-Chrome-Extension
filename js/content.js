@@ -7,6 +7,7 @@
   });
 
   function setScale(scale) {
+    document.body.style.transformOrigin = 'top left';
     document.body.style.webkitTransform =  'scale(' + scale +')';
     document.body.style.msTransform =   'scale(' + scale +')';
     document.body.style.transform = 'scale(' + scale +')';
