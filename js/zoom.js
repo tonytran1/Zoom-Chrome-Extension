@@ -3,16 +3,6 @@ $(document).ready(function () {
   var scaleDownInterval;
   var scale = 1.0000;
 
-  $('#zoom-in').on('click', function() {
-    scale += 0.0025;
-    sendToTab(scale);
-  });
-
-  $('#zoom-out').on('click', function() {
-    scale -= 0.0025;
-    sendToTab(scale);
-  });
-
   $('#zoom-in').on('mousedown', function() {
     scaleUpInterval = setInterval(function() {
       scale += 0.0025;
